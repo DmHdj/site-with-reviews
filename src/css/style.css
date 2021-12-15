@@ -1,1 +1,232 @@
-/*  */
+body {
+    background: #E5E5E5;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: 0 auto;
+    padding: 23px 0 23px 0;
+}
+
+.header .header_logo {
+    margin: auto;
+}
+
+.header .menu {
+    margin: auto;
+}
+
+.header .menu .menu_list {
+    display: flex;
+    list-style: none;
+}
+
+.header .menu .menu_list .menu_item {
+    font-family: Muller;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #333333;
+    padding-right: 70px;
+}
+
+.header .menu .menu_list .menu_item a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.header .header_button {
+    margin: auto;
+}
+
+.buttons {
+    width: 203px;
+    height: 47px;
+    padding: 14px 18px;
+    font-family: Muller;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #18A0FB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background: #414753;
+}
+
+.header .header_button .header_register-entry {
+    margin-left: 16px;
+}
+
+.main {
+    display: flex;
+    max-width: 78%;
+    margin: 0 auto;
+    min-height: 495px;
+    background-color: #FFFFFF;
+}
+
+.main .main_title {
+    width: 40%;
+    margin: auto;
+}
+
+.main .main_title .main_header {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #333333;
+    margin-left: 100px;
+}
+
+.main .main_title .main_header span {
+    color: #18A0FB;
+}
+
+.main .main_title .main_descr {
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #555555;
+    margin-top: 46px;
+    margin-left: 100px;
+}
+
+.main .main_image {
+    width: 60%;
+}
+
+.main .main_image img {
+    width: 100%;
+}
+
+.reviews {
+    display: flex;
+    max-width: 78%;
+    margin: 0 auto;
+    min-height: 495px;
+}
+
+.top-reviews {
+    width: 75%;
+}
+
+.aside_filter {
+    width: 25%;
+}
+
+.top-reviews .top-reviews_header {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 40px;
+    color: #333333;
+}
+
+.top-reviews .top-reviews_subheader {
+    font-family: Muller;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(85, 85, 85, 0.75);
+}
+
+.top-reviews .top-reviews_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item {
+    position: relative;
+    width: 415px;
+    margin-left: 90px;
+    background-color: #fff;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_name {
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 17px;
+    color: #333333;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item  .top-reviews_foto {
+    position: absolute;
+    left: -50px;
+    width: 77px;
+    height: 77px;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item  .top-reviews_foto img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item h2 {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item time {
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #444444;
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text {
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(68, 68, 68, 0.8);
+}
+
+.top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text::before {
+    content: "";
+    background: url(../icons/quotes.svg);
+    width: 53px;
+    height: 33px;
+}
+
+/* Поиск */
+.search input {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+}
+
+.search button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #7BA7AB;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #F9F0DA;
+}
