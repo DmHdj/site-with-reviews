@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 body {
     background: #E5E5E5;
 }
@@ -147,6 +149,8 @@ body {
     width: 415px;
     margin-left: 90px;
     background-color: #fff;
+    margin-bottom: 38px;
+    padding-right: 36px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_name {
@@ -154,11 +158,13 @@ body {
     font-weight: 400;
     font-size: 17px;
     color: #333333;
+    margin: 33px 0 0 70px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item  .top-reviews_foto {
     position: absolute;
-    left: -50px;
+    left: -43px;
+    top: 32px;
     width: 77px;
     height: 77px;
 }
@@ -169,32 +175,40 @@ body {
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item h2 {
+    display: block;
     font-family: Muller;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #444444;
+    width: 324px;
+    margin: 7px 0 0 70px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item time {
     font-family: Muller;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #444444;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(139, 139, 139, 0.89);
+    margin: 14px 0 0 70px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text {
+    position: relative;
     font-family: Muller;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: rgba(68, 68, 68, 0.8);
+    margin: 14px 0 0 111px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text::before {
     content: "";
-    background: url(../icons/quotes.svg);
+    position: absolute;
+    left: -45px;
+    top: -7px;
+    background: url(../icons/quotes.svg) center center no-repeat;
     width: 53px;
     height: 33px;
 }
