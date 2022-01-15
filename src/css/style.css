@@ -115,14 +115,11 @@ body {
     max-width: 78%;
     margin: 0 auto;
     min-height: 495px;
+    padding-top: 73px;
 }
 
 .top-reviews {
     width: 75%;
-}
-
-.aside_filter {
-    width: 25%;
 }
 
 .top-reviews .top-reviews_header {
@@ -130,6 +127,7 @@ body {
     font-weight: 700;
     font-size: 40px;
     color: #333333;
+    margin: 0;
 }
 
 .top-reviews .top-reviews_subheader {
@@ -137,15 +135,21 @@ body {
     font-weight: 500;
     font-size: 18px;
     color: rgba(85, 85, 85, 0.75);
+    margin: 0;
+    margin-top: 21px;
 }
 
 .top-reviews .top-reviews_wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */  
+    margin-top: 98px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
+    min-height: 400px;
     width: 415px;
     margin-left: 90px;
     background-color: #fff;
@@ -201,6 +205,7 @@ body {
     line-height: 24px;
     color: rgba(68, 68, 68, 0.8);
     margin: 14px 0 0 111px;
+    padding-bottom: 30px;
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text::before {
@@ -213,34 +218,126 @@ body {
     height: 33px;
 }
 
-/* Поиск */
+.top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text::after {
+    content: "";
+    width: 120%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.19);
+    position: absolute;
+    bottom: 5%;
+    left: -20%;
+}
+
+.top-reviews .top-reviews_button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Боковая панель с фильтрами и поиском */
+.aside {
+    width: 25%;
+}
+
+/* Поиск*/
+.aside .search form {
+    position: relative;
+}
+
 .search input {
     display: block;
     width: 100%;
-    height: 42px;
-    padding-left: 10px;
-    border: 2px solid #7BA7AB;
+    height: 68px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
     border-radius: 5px;
-    outline: none;
-    background: #F9F0DA;
-    color: #9E9C9C;
+    padding: 25px;
 }
 
 .search button {
-    position: absolute; 
-    top: 0;
-    right: 0px;
-    width: 42px;
-    height: 42px;
+    position: absolute;
+    top: 28px;
+    left: 87%;
+    background: url(../icons/search.svg) center center no-repeat;
+    width: 19px;
+    height: 19px;
     border: none;
-    background: #7BA7AB;
-    border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
-.search button:before {
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 16px;
-    color: #F9F0DA;
+.aside .categories span {
+    display: block;
+    font-family: Muller;
+    font-weight: 700;
+    font-size: 31px;
+    color: #333333;
+    margin-top: 55px;
+}
+
+.aside .categories .review_theme {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 45px 0 0 0;
+}
+
+.aside .categories .review_theme li {
+    display: block;
+    background-color: #E8E8E8;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 13px 26px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+}
+
+.aside .categories .review_theme li a {
+    font-size: 18px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.aside_adv {
+    margin-top: 111px;
+}
+
+.aside_adv img {
+    width: 100%;
+    height: 694px;
+}
+
+.adv {
+    width: 1500px;
+    height: 189px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+footer .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 78%;
+    margin: 60px auto 80px auto;
+}
+
+footer .footer_wrapper .footer_logo {
+    width: 255px;
+    height: 81px;
+}
+
+footer .footer_wrapper .footer_support {
+    margin: auto 0;
+}
+
+footer .footer_wrapper .footer_privacy {
+    margin: auto 0;
+}
+
+footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy a {
+    font-family: Muller;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #333333;
+    text-decoration: underline;
 }
