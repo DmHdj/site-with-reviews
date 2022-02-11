@@ -27,7 +27,7 @@ body {
 }
 
 .header .menu .menu_list .menu_item {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
@@ -48,7 +48,7 @@ body {
     width: 203px;
     height: 47px;
     padding: 14px 18px;
-    font-family: Muller;
+    font-family: Roboto;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -83,7 +83,7 @@ body {
 }
 
 .main .main_title .main_header {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
@@ -96,7 +96,7 @@ body {
 }
 
 .main .main_title .main_descr {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -126,7 +126,7 @@ body {
 }
 
 .top-reviews .top-reviews_header {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 40px;
     color: #333333;
@@ -134,7 +134,7 @@ body {
 }
 
 .top-reviews .top-reviews_subheader {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
     color: rgba(85, 85, 85, 0.75);
@@ -162,7 +162,7 @@ body {
 }
 
 .name{
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 17px;
     color: #333333;
@@ -255,7 +255,7 @@ body {
 
 .top-reviews .top-reviews_wrapper .top-reviews_item h2 {
     display: block;
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -265,7 +265,7 @@ body {
 }
 
 .reviews_about {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -273,7 +273,7 @@ body {
 }
 
 .date {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
     color: rgba(139, 139, 139, 0.89);
@@ -285,7 +285,7 @@ body {
 
 .text_review {
     position: relative;
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -325,7 +325,7 @@ body {
 }
 
 .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_comments .comments_number {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 17px;
     color: #444444;
@@ -418,7 +418,7 @@ body {
 
 .aside .categories span {
     display: block;
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 31px;
     color: #333333;
@@ -447,7 +447,7 @@ body {
 }
 
 .tags li a {
-    font-family: Muller;
+    font-family: Roboto;
     font-size: 18px;
     color: #333333;
     text-decoration: none;
@@ -492,13 +492,106 @@ footer .footer_wrapper .footer_privacy {
 }
 
 footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy a {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     color: #333333;
     text-decoration: underline;
 }
+
+/* Модальное окно */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+}
+
+.modal__dialog {
+    max-width: 620px;
+    margin: 40px auto;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.modal__content form {
+    text-align: center;
+}
+
+.modal__close { 
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 48px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: #414753;
+    cursor: pointer;
+}
+.modal__title {
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 31px;
+    color: #333333;
+}
+.modal__input {
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 280px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+    outline: 0
+}
+
+.modal__input:first-of-type {
+    margin-top: 66px;
+}
+
+.modal__input:last-of-type {
+    margin-bottom: 50px;
+}
+
+.modal .btn {
+    display: inline-block;
+    width: 150px;
+    margin: 0 auto; 
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* Конец модального окна */
 
 /* Конец футера */
 
@@ -562,7 +655,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 }
 
 .review_about {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -598,7 +691,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
     width: 350px;
     left: 77%;
     top: 30px;
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
     line-height: 30px;
@@ -668,7 +761,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 
 .comments_title {
     display: block;
-    font-family: Muller;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 800;
     font-size: 28px;
@@ -680,7 +773,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 }
 
 .main_comment .comment_name {
-    font-family: Muller;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -695,7 +788,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 }
 
 .main_comment .comment_text {
-    font-family: Muller;
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -768,7 +861,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 
 .comments_replies_title {
     display: block;
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     color: #959595;
@@ -779,7 +872,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 }
 
 .reply_name {
-    font-family: Muller;
+    font-family: Roboto;
     display: inline-block;
     font-weight: 500;
     font-size: 18px;
@@ -792,7 +885,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 }
 
 .reply_text {
-    font-family: Muller;
+    font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Сайт с отзывами</title>
 </head>
@@ -23,7 +26,7 @@
             </div>
             <div class="header_button">
                 <button class="header_add-revie buttons">ДОБАВИТЬ ОТЗЫВ</button>
-                <button class="header_register-entry buttons">Регистрация / Вход</button>
+                <button data-modal class="header_register-entry buttons">Регистрация / Вход</button>
             </div>
         </div>
     </header>
@@ -289,5 +292,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Авторизация</div>
+                    <input required placeholder="Логин" name="login" type="text" class="modal__input">
+                    <input required placeholder="Пароль" name="pass" type="password" class="modal__input">
+                    <button class="btn buttons">Войти</button>
+                    <button class="btn buttons">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
