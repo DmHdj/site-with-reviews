@@ -11,9 +11,9 @@
 <body>
     <header>
         <div class="header">
-            <div class="header_logo">
+            <a class="header_logo" href = "index.html">
                 <img src="img/logo.jpg" alt="logo">
-            </div>
+            </a>
             <div class="menu">
                 <ul class="menu_list">
                     <li class="menu_item"><a href="#">Каталог компаний</a></li>
@@ -22,8 +22,8 @@
                 </ul>
             </div>
             <div class="header_button">
-                <button class="header_add-revie buttons">ДОБАВИТЬ ОТЗЫВ</button>
-                <button class="header_register-entry buttons">Регистрация / Вход</button>
+                <a href="addReview.html"><button class="header_add-revie buttons">ДОБАВИТЬ ОТЗЫВ</button></a>
+                <button data-modal class="header_register-entry buttons">Регистрация / Вход</button>
             </div>
         </div>
     </header>
@@ -42,7 +42,7 @@
                 <div class="review_name name">
                     Tatiana
                 </div>
-                <form action="#" class="form_rating ">
+                <form action="#" class="form_rating">
                     <div class="simple_rating review_rating">
                         <div class="simple_rating_items">
                             <input type="radio" name="simple_rating2" id="simple_rating_5" class="simple_rating_item" value="5">
@@ -177,9 +177,9 @@
     </div>
     <footer>
         <div class="footer_wrapper">
-            <div class="footer_logo">
+            <a class="footer_logo" href = "index.html">
                 <img src="img/logo.jpg" alt="logo">
-            </div>
+            </a>
             <div class="footer_support">
                 <a href="#" target="_blank">Служба поддержки</a>
             </div>
@@ -188,5 +188,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Авторизация</div>
+                    <input required placeholder="Логин" name="login" type="text" class="modal__input">
+                    <input required placeholder="Пароль" name="pass" type="password" class="modal__input">
+                    <button class="btn buttons">Войти</button>
+                    <button class="btn buttons">Регистрация</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

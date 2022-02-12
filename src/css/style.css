@@ -159,6 +159,7 @@ body {
     margin-bottom: 38px;
     padding-right: 36px;
     padding-bottom: 20px;
+    text-decoration: none;
 }
 
 .name{
@@ -912,4 +913,197 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
     padding: 34px 53px 45px 70px;
     margin: 0 auto;
     margin-top: 65px;
+}
+
+/* Конец страницы с отзывом */
+
+/* СТРАНИЦА С ДОБАВЛНИЕМ ОТЗЫВА */
+
+.add_review {
+    font-family: Roboto;
+    position: relative;
+    max-width: 78%;
+    margin: 0 auto;
+}
+
+.add_review_form {
+    margin-top: 40px;
+} 
+
+.step {
+    padding: 62px 82px 62px 82px;
+    background-color: #fff;
+}
+
+.first_step {
+    position: relative;
+}
+
+.first_step::before {
+    content: "";
+    width: 75px;
+    height: 95px;
+    position: absolute;
+    left: 80px;
+    background: url('../icons/step1.svg') center center/cover no-repeat;
+
+}
+
+.step_title {
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.2);
+    margin-left: 110px;
+}
+
+.step_desrc {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(85, 85, 85, 0.75);
+    margin-left: 110px;
+}
+
+.select_object {
+    width: 800px;
+    height: 77px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    padding: 30px 33px;
+}
+
+.first_step button {
+    width: 208px;
+    height: 77px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #F25F5C;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.second_step {
+    margin-top: 33px;
+    position: relative;
+}
+
+.second_step::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    left: 80px;
+    background: url('../icons/step2.svg') center center/cover no-repeat;
+
+}
+
+.second_step .add_review_text {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.input_file_btn {
+    display: inline-block;
+    position: relative;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    padding: 15px 26px 15px 56px; 
+    width: 280  px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.input_file_btn::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    width: 17px;
+    height: 19px;
+    background: url('../icons/input_file.svg') center center/cover no-repeat;
+}
+
+.input_file {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.input_wrapper span {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.pros_and_cons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 23px;
+}
+
+.pros_and_cons .advantages, .pros_and_cons .disadvantages {
+    width: 48%;
+}
+
+.advantages textarea , .disadvantages textarea {
+    width: 100%;
+    height: 260px;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+ .advantages label ,  .disadvantages label {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 13px;
+}
+
+ .advantages label input , .disadvantages label input {
+    display: inline;
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+
+.advantages label span, .disadvantages label span {
+    display: inline;
+    margin: 0 auto;
+    line-height: 18px;
+}
+
+.add_review_form .rating {
+    display: inline-block;
+    margin: 58px 0 0 80px;
+}
+
+.add_review_form .rating span {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #555555;
+    margin-right: 20px;
+    vertical-align: 25%;
+}
+
+.add_review_rating {
+    font-size: 35px;
+    left: 0;
+}
+
+.add_review_button {
+    display: inline-block;
+    margin-left: 115px;
 }
