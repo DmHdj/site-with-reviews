@@ -14,119 +14,133 @@
 <body>
     <header>
         <div class="header">
-            <a class="header_logo" href = "index.html">
-                <img src="img/logo.jpg" alt="logo">
-            </a>
-            <div class="menu">
-                <ul class="menu_list">
-                    <li class="menu_item"><a href="#">Каталог компаний</a></li>
-                    <li class="menu_item"><a href="#">Правила</a></li>
-                    <li class="menu_item"><a href="#">Служба поддержки</a></li>
-                </ul>
-            </div>
-            <div class="header_button">
-                <a href="addReview.html"><button class="header_add-revie buttons">ДОБАВИТЬ ОТЗЫВ</button></a>
-                <button data-modal class="header_register-entry buttons">Регистрация / Вход</button>
+            <div class="container">
+                <div class="header_wrapper">
+                    <a class="header_logo" href = "index.html">
+                        <img src="img/logo.jpg" alt="logo">
+                    </a>
+                    <div class="menu">
+                        <ul class="menu_list">
+                            <li class="menu_item"><a href="#">Каталог компаний</a></li>
+                            <li class="menu_item"><a href="#">Правила</a></li>
+                            <li class="menu_item"><a href="#">Служба поддержки</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_button">
+                        <a href="addReview.html"><button class="header_add-revie buttons">ДОБАВИТЬ ОТЗЫВ</button></a>
+                        <button data-modal class="header_register-entry buttons">Регистрация / Вход</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <section class="add_review">
-        <h1 class="main_header">
-            Написать отзыв           
-        </h1>
-        <form action="#" class="add_review_form" >
-            <div class="first_step step">
-                <span class="step_title">ШАГ 1</span>
-                <p class="step_desrc">
-                    Для добавления нового отзыва необходимо указать объект, о котором Вы собираетесь написать отзыв.
-                </p>
-                <input type="text" placeholder="Выберите объект" class="select_object">
-                <button>найти</button>
+        <div class="container">
+            <div class="add_review_wrapper">
+                <h1 class="main_header">
+                    Написать отзыв           
+                </h1>
+                <form action="#" class="add_review_form" >
+                    <div class="first_step step">
+                        <span class="step_title">ШАГ 1</span>
+                        <p class="step_desrc">
+                            Для добавления нового отзыва необходимо указать объект, о котором Вы собираетесь написать отзыв.
+                        </p>
+                        <input type="text" placeholder="Выберите объект" class="select_object">
+                        <button>найти</button>
+                    </div>
+                    <div class="second_step step">
+                        <span class="step_title">ШАГ 2</span>
+                        <p class="step_desrc">
+                            Оставить отзыв
+                        </p>
+                        <textarea name="review text" placeholder="Текст отзыва" class="add_review_text"></textarea>
+                        <label for="input_file" class="input_wrapper">
+                            <div class="input_file_btn">
+                                Прикрепить файл
+                                <input type="file" id="input_file" class="input_file" multiple>
+                            </div>
+                            
+                            <span>Обзор...</span>
+                        </label>
+                        <div class="pros_and_cons">
+                            <div class="advantages">
+                                <textarea name="advantages" placeholder="Достоинства"></textarea>
+                                <label>
+                                    <input type="checkbox" name="type_of_advantages" value="Satisfaction">
+                                    <span>Удовлетворенность</span>                            
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_advantages" value="Deadlines">
+                                    <span>Соблюдение сроков</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_advantages" value="Professionalism of employees">
+                                    <span>Профессионализм сотрудников</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_advantages" value="Probability of recommendation">
+                                    <span>Вероятность рекомендации</span>                            
+                                </label>
+                            </div>
+                            <div class="disadvantages">
+                                <textarea name="disadvantages" placeholder="Недостатки"></textarea>
+                                <label>
+                                    <input type="checkbox" name="type_of_disadvantages" value="Satisfaction">Удовлетворенность
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_disadvantages" value="Deadlines">Соблюдение сроков
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_disadvantages" value="Professionalism of employees">Профессионализм сотрудников
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="type_of_disadvantages" value="Probability of recommendation">Вероятность рекомендации
+                                </label>
+                            </div>
+                        </div>  
+        
+                    </div>
+                    <div class="rating">
+                        <span>Оценка</span> 
+                        <div class="simple_rating add_review_rating">
+                            <div class="simple_rating_items">
+                                <input type="radio" name="simple_rating2" id="simple_rating_5" class="simple_rating_item" value="5">
+                                <label for="simple_rating_5" class="simple_rating_label"></label>
+                                <input type="radio" name="simple_rating2" id="simple_rating_4" class="simple_rating_item" value="4" checked>
+                                <label for="simple_rating_4" class="simple_rating_label"></label>
+                                <input type="radio" name="simple_rating2" id="simple_rating_3" class="simple_rating_item" value="3">
+                                <label for="simple_rating_3" class="simple_rating_label"></label>
+                                <input type="radio" name="simple_rating2" id="simple_rating_2" class="simple_rating_item" value="2">
+                                <label for="simple_rating_2" class="simple_rating_label"></label>
+                                <input type="radio" name="simple_rating2" id="simple_rating_1" class="simple_rating_item" value="1">
+                                <label for="simple_rating_1" class="simple_rating_label"></label>  
+                            </div>
+                    </div>
+                    <button data-modal class="add_review_button buttons">ОПУБЛИКОВАТЬ</button>
+                </form>
             </div>
-            <div class="second_step step">
-                <span class="step_title">ШАГ 2</span>
-                <p class="step_desrc">
-                    Оставить отзыв
-                </p>
-                <textarea name="review text" placeholder="Текст отзыва" class="add_review_text"></textarea>
-                <label for="input_file" class="input_wrapper">
-                    <div class="input_file_btn">
-                        Прикрепить файл
-                        <input type="file" id="input_file" class="input_file" multiple>
-                    </div>
-                    
-                    <span>Обзор...</span>
-                </label>
-                <div class="pros_and_cons">
-                    <div class="advantages">
-                        <textarea name="advantages" placeholder="Достоинства"></textarea>
-                        <label>
-                            <input type="checkbox" name="type_of_advantages" value="Satisfaction">
-                            <span>Удовлетворенность</span>                            
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_advantages" value="Deadlines">
-                            <span>Соблюдение сроков</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_advantages" value="Professionalism of employees">
-                            <span>Профессионализм сотрудников</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_advantages" value="Probability of recommendation">
-                            <span>Вероятность рекомендации</span>                            
-                        </label>
-                    </div>
-                    <div class="disadvantages">
-                        <textarea name="disadvantages" placeholder="Недостатки"></textarea>
-                        <label>
-                            <input type="checkbox" name="type_of_disadvantages" value="Satisfaction">Удовлетворенность
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_disadvantages" value="Deadlines">Соблюдение сроков
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_disadvantages" value="Professionalism of employees">Профессионализм сотрудников
-                        </label>
-                        <label>
-                            <input type="checkbox" name="type_of_disadvantages" value="Probability of recommendation">Вероятность рекомендации
-                        </label>
-                    </div>
-                </div>  
-
-            </div>
-            <div class="rating">
-                <span>Оценка</span> 
-                <div class="simple_rating add_review_rating">
-                    <div class="simple_rating_items">
-                        <input type="radio" name="simple_rating2" id="simple_rating_5" class="simple_rating_item" value="5">
-                        <label for="simple_rating_5" class="simple_rating_label"></label>
-                        <input type="radio" name="simple_rating2" id="simple_rating_4" class="simple_rating_item" value="4" checked>
-                        <label for="simple_rating_4" class="simple_rating_label"></label>
-                        <input type="radio" name="simple_rating2" id="simple_rating_3" class="simple_rating_item" value="3">
-                        <label for="simple_rating_3" class="simple_rating_label"></label>
-                        <input type="radio" name="simple_rating2" id="simple_rating_2" class="simple_rating_item" value="2">
-                        <label for="simple_rating_2" class="simple_rating_label"></label>
-                        <input type="radio" name="simple_rating2" id="simple_rating_1" class="simple_rating_item" value="1">
-                        <label for="simple_rating_1" class="simple_rating_label"></label>  
-                    </div>
-            </div>
-            <button data-modal class="add_review_button buttons">ОПУБЛИКОВАТЬ</button>
-        </form>
+        </div>
     </section>
     <div class="adv">
-        <img src="img/footer_adv.png" alt="adv">
+        <div class="container">
+            <div class="adv_wrapper">
+            <img src="img/footer_adv.png" alt="adv">
+            </div>
+        </div>
     </div>
     <footer>
-        <div class="footer_wrapper">
-            <a class="footer_logo" href = "index.html">
-                <img src="img/logo.jpg" alt="logo">
-            </a>
-            <div class="footer_support">
-                <a href="#" target="_blank">Служба поддержки</a>
-            </div>
-            <div class="footer_privacy">
-                <a href="#" target="_blank">Политика конфиденциальности</a>
+        <div class="container">
+            <div class="footer_wrapper">
+                <a class="footer_logo" href = "index.html">
+                    <img src="img/logo.jpg" alt="logo">
+                </a>
+                <div class="footer_support">
+                    <a href="#" target="_blank">Служба поддержки</a>
+                </div>
+                <div class="footer_privacy">
+                    <a href="#" target="_blank">Политика конфиденциальности</a>
+                </div>
             </div>
         </div>
     </footer>

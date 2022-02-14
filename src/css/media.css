@@ -1,0 +1,470 @@
+@media (max-width: 1455px) {
+    .top-reviews .top-reviews_wrapper .top-reviews_item {
+        width: 340px;
+    }
+
+    .aside {
+        width: 20%;
+    }
+
+    .aside .categories .review_theme li {
+        padding: 1px 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .header_wrapper {
+        padding: 16px 0 16px 0;
+    }
+
+    .header_button {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+   
+    .buttons {
+        width: 150px;
+    }
+
+    .header_wrapper .header_button .header_register-entry {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .header_wrapper .menu_list {
+        padding: 0;
+        text-align: center;
+    }
+
+    .header_wrapper .menu_list .menu_item {
+        padding-right: 20px;
+    }
+
+    .main_wrapper {
+        min-height: 0;
+    }
+    .main_wrapper .main_title {
+        margin: 0;
+    }
+
+    .main_wrapper .main_title .main_header {
+        font-size: 32;
+        line-height: 36px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .main_wrapper .main_title .main_descr {
+        margin: 30px 0 30px 50px;
+    }
+
+    .main_wrapper .main_image {
+        margin: auto;
+    }
+
+    .top-reviews {
+        width: 70%;
+    }
+    .top-reviews .top-reviews_wrapper {
+        margin-top: 50px;
+    }
+    .top-reviews .top-reviews_wrapper .top-reviews_item {
+        width: 550px;
+        max-width: none;
+        margin-left: 60px;
+
+        margin-bottom: 28px;
+    }
+
+    .aside {
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .main_wrapper .main_title .main_header {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .main_wrapper .main_title .main_descr {
+        margin: 30px 0 30px 50px;
+        font-size: 16px;
+    }
+
+    .footer_wrapper {
+        margin: 30px auto 20px auto;
+    }
+
+    .reviews_wrapper {
+        flex-wrap: wrap;
+        padding-top: 55px;
+    }
+
+    .top-reviews {
+        width: 100%;
+        order: 2;
+    }
+
+    .aside {
+        width: 100%;
+        order: 1;
+    }
+
+    .aside .categories span {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .aside .categories .review_theme {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .aside_adv {
+        margin-top: 40px;
+    }
+
+    .aside_adv img {
+        display: none;
+    }
+    .aside_adv {
+        height: 90px;
+        background: url('../img/footer_adv.png') center center/cover no-repeat;
+    }
+
+    .top-reviews .top-reviews_header {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .top-reviews .top-reviews_subheader {
+        text-align: center;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item {
+        width: 650px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 720px;
+    }
+
+/* начало гамбурера  */
+    .hamburger {
+        display:block;
+        position:absolute;
+        right: 10px;
+        top: 50px;
+        -webkit-transform:translateY(-50%);
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+    }
+    
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #18A0FB;
+        margin-bottom: 2px;
+        -webkit-transition: 0.5s all;
+        transition: 0.5s all
+    }
+
+    .hamburger_active span {
+        margin-bottom:-2px
+    }
+
+    .hamburger_active span:nth-child(1) {
+        -webkit-transform: translateY(3px) rotate(-45deg);
+        transform: translateY(3px) rotate(-45deg);
+    }
+
+    .hamburger_active span:nth-child(2){
+        display: none;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        -webkit-transform: translateY(3px) rotate(45deg);
+        transform: translateY(3px) rotate(45deg)
+    }
+
+    .menu_list{
+        position: fixed;
+        box-orient: vertical;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 30%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: #18A0FB;
+        transition: 0.6s all;transition:0.6s all;
+        z-index: 1000;
+    }
+
+    .menu_active {
+        left:0;
+    }
+
+    .header_wrapper .menu_list .menu_item {
+        margin-bottom: 30px;
+    }
+
+    .header_wrapper .menu_list .menu_item a {
+        color: #fff;
+    }
+
+    /* конец гамбургера */
+
+    .header_button {
+        width: 60%;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .buttons {
+        width: 130px;
+        font-size: 10px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    .adv_wrapper {
+        height: 90px;
+    }
+
+    .adv_wrapper img {
+        height: 90px;
+    }
+
+    .footer_wrapper {
+        height: 60px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer_wrapper .footer_logo {
+        width: 200px;
+    }
+
+    .modal__dialog {
+        width: 520px;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 450px;
+    }
+
+    .header_register-entry, .header_add-revie  {
+        position: relative;
+        visibility: hidden;
+    }
+
+    .header_register-entry::before, .header_add-revie::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        visibility:visible;
+    }
+
+    .header_register-entry::before {
+        background: url('../icons/account_check.svg') center center/cover no-repeat;
+        top: -5px;
+        left: -10px;
+    }
+
+    .header_add-revie::before {
+        background: url('../icons/add_review.svg') center center/cover no-repeat;
+        left: 50px;
+    }
+
+    .hamburger {
+        top: 35px;
+    }
+
+    .main_wrapper {
+        flex-direction: column;
+    }
+
+    .main_wrapper .main_title {
+        width: 100%;
+        order: 1;
+        padding: 30px;
+    }
+
+    .main_wrapper .main_title .main_header {
+        margin: 0;
+    }
+
+    .main_wrapper .main_title .main_descr {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .main_wrapper .main_image {
+        order: 0;
+        width: 100%;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item  {
+        width:  350px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item h2 {
+        width: 200px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_text {
+        margin: 10px 0 0 50px;
+    }
+
+    .text_review::before {
+        top: -13px;
+    }
+
+    .footer_wrapper .footer_logo {
+        margin-right: 10px;
+        width: 150px;
+    }
+
+    .footer_wrapper .footer_support a, .footer_wrapper .footer_privacy a{
+        font-size: 10px;
+    }
+
+    .modal__dialog {
+        width: 410px;
+    }
+
+    .modal__title {
+        font-size: 26px;
+    }
+
+    .modal__close {
+        width: 30px;
+        height: 30px;
+        ;line-height: 30px;
+    }
+
+    .modal__input {
+        height: 30px;
+        margin: 15px;
+    }
+
+    .modal .btn {
+        width: 100px;
+        height: 30px;
+        line-height: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        max-width: 300px;
+    }
+    .hamburger {
+        top: 35px;
+        right: 20px;
+    }
+
+    .header_register-entry::before {
+        left: -60px;
+    }
+
+    .header_add-revie::before {
+        left: 20px;
+    }
+
+    .aside .categories span {
+        font-size: 24px;
+    }
+
+    .tags li a {
+        font-size: 12px;
+    }
+
+    .top-reviews .top-reviews_header {
+        font-size: 24px;
+    }
+
+    .top-reviews .top-reviews_subheader {
+        font-size: 13px;
+    }
+
+    .top-reviews .top-reviews_wrapper {
+        margin-top: 20px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item  {
+        width:  250px;
+    }
+
+    .top-reviews .top-reviews_wrapper .form_rating {
+        width: 15px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item .top-reviews_foto {
+        left: -15px;
+        top: 30px;
+    }
+
+    .foto {
+        width: 60px;
+        height: 60px;
+    }
+
+    .top-reviews .top-reviews_wrapper .top-reviews_item h2 {
+        line-height: 17px;
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .text_review {
+        line-height: 20px;
+    }
+
+    .footer_wrapper .footer_logo {
+        width: 120px;
+    }
+
+    .footer_wrapper .footer_privacy {
+        width: 90px;
+    }
+
+    .modal__dialog {
+        width: 300px;
+    }
+
+    .modal__input {
+        width: 200px;
+    }
+
+    
+}
+

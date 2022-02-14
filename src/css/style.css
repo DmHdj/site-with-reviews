@@ -4,54 +4,70 @@ body {
     background: #E5E5E5;
 }
 
+.container {
+    max-width: 1530px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* Хедер */
-.header {
+
+.header_wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 78%;
     margin: 0 auto;
     padding: 23px 0 23px 0;
 }
 
-.header .header_logo {
+.header_wrapper .header_logo {
     margin: auto;
 }
 
-.header .menu {
-    margin: auto;
+.header_wrapper .header_logo  {
+    width: 200px;
+    display: block;
 }
 
-.header .menu .menu_list {
+.header_wrapper .header_logo img {
+    width: 100%;
+}
+
+.header_wrapper .menu_list {
+    margin: auto;
     display: flex;
     list-style: none;
 }
 
-.header .menu .menu_list .menu_item {
+.header_wrapper .menu_list .menu_item {
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #333333;
-    padding-right: 70px;
+    padding-right: 40px;
 }
 
-.header .menu .menu_list .menu_item a {
+.header_wrapper .menu_list .menu_item a {
     color: #333333;
     text-decoration: none;
 }
 
-.header .header_button {
+.hamburger {
+    display:none
+}
+
+.header_wrapper .header_button {
     margin: auto;
 }
 
 .buttons {
-    width: 203px;
+    width: 180px;
     height: 47px;
-    padding: 14px 18px;
+    padding: 14px 14px;
     font-family: Roboto;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     color: #FFFFFF;
     background: #18A0FB;
     border-radius: 5px;
@@ -62,27 +78,27 @@ body {
     background: #414753;
 }
 
-.header .header_button .header_register-entry {
+.header_wrapper .header_button .header_register-entry {
     margin-left: 16px;
 }
 
 /* Конец хедера */
 
 /* Главная часть. Главная страница */
-.main {
+
+.main_wrapper {
     display: flex;
-    max-width: 78%;
     margin: 0 auto;
     min-height: 495px;
     background-color: #FFFFFF;
 }
 
-.main .main_title {
+.main_wrapper .main_title {
     width: 40%;
     margin: auto;
 }
 
-.main .main_title .main_header {
+.main_wrapper .main_title .main_header {
     font-family: Roboto;
     font-weight: 700;
     font-size: 40px;
@@ -91,11 +107,11 @@ body {
     margin-left: 100px;
 }
 
-.main .main_title .main_header span {
+.main_wrapper .main_title .main_header span {
     color: #18A0FB;
 }
 
-.main .main_title .main_descr {
+.main_wrapper .main_title .main_descr {
     font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
@@ -105,17 +121,17 @@ body {
     margin-left: 100px;
 }
 
-.main .main_image {
+.main_wrapper .main_image {
     width: 60%;
 }
 
-.main .main_image img {
+.main_wrapper .main_image img {
     width: 100%;
 }
 
-.reviews {
+.reviews_wrapper {
     display: flex;
-    max-width: 78%;
+    justify-content: space-between;
     margin: 0 auto;
     min-height: 495px;
     padding-top: 73px;
@@ -143,8 +159,6 @@ body {
 }
 
 .top-reviews .top-reviews_wrapper {
-    /* display: flex; */
-    /* flex-wrap: wrap; */  
     margin-top: 98px;
 }
 
@@ -153,7 +167,7 @@ body {
     vertical-align: top;
     position: relative;
     min-height: 300px;
-    width: 415px;
+    max-width: 420px;
     margin-left: 90px;
     background-color: #fff;
     margin-bottom: 38px;
@@ -337,7 +351,6 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    /* top: -10px; */
     left: -30px;
     background: url(../icons/comment.svg) center center no-repeat;
 }
@@ -391,6 +404,7 @@ body {
 
 /* Поиск*/
 .aside .search form {
+    display: block;
     position: relative;
 }
 
@@ -463,36 +477,41 @@ body {
     height: 694px;
 }
 
-.adv {
-    width: 1500px;
-    height: 189px;
+.adv_wrapper {
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
+.adv_wrapper img {
+    width: 100%;
+}
+
 /* Футер */
 
-footer .footer_wrapper {
+.footer_wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 78%;
     margin: 60px auto 80px auto;
 }
 
-footer .footer_wrapper .footer_logo {
+.footer_wrapper .footer_logo {
     width: 255px;
-    height: 81px;
 }
 
-footer .footer_wrapper .footer_support {
+.footer_wrapper .footer_logo img {
+    width: 100%;
+}
+
+.footer_wrapper .footer_support {
     margin: auto 0;
 }
 
-footer .footer_wrapper .footer_privacy {
+.footer_wrapper .footer_privacy {
     margin: auto 0;
 }
 
-footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy a {
+.footer_wrapper .footer_support a, .footer_wrapper .footer_privacy a {
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -500,6 +519,8 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
     color: #333333;
     text-decoration: underline;
 }
+
+/* Конец футера */
 
 /* Модальное окно */
 .modal {
@@ -594,14 +615,10 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 
 /* Конец модального окна */
 
-/* Конец футера */
-
-
 /* СТРАНИЦА С ОТЗЫВОМ */
 
 .review {
     position: relative;
-    max-width: 78%;
     margin: 0 auto;
 }
 
@@ -922,7 +939,7 @@ footer .footer_wrapper .footer_support a, footer .footer_wrapper .footer_privacy
 .add_review {
     font-family: Roboto;
     position: relative;
-    max-width: 78%;
+    /* max-width: 1500px;  */
     margin: 0 auto;
 }
 
