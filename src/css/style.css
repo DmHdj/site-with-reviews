@@ -622,19 +622,13 @@ body {
     margin: 0 auto;
 }
 
-.review::before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    width: 1500px;
-    height: 1px;
-    background-color: #E8E8E8;
+.review_wrapper {
+    padding-left: 40px;
 }
 
 .main_review {
     background-color: #FFFFFF;
-    width: 1500px;
-    height: 1250px;
+    width: 100%;
     padding: 34px 53px 45px 70px;
     margin: 0 auto;
     margin-top: 65px;
@@ -642,7 +636,7 @@ body {
 
 .tags_list {
     display: flex;
-    margin: 61px 0 0 0;
+    margin-top: 61px;
     padding: 0;
 } 
 
@@ -695,24 +689,23 @@ body {
     position: absolute;
     content: "";
     display: block;
-    top: 60px;
+    top: 110%;
     left: -42px;
-    width: 1320px;
+    width: 100%;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.19);
+
 }
 
 .review_buttons {
-    position: relative;
     display: flex;
+    justify-content: end;
     align-items: center;
-    width: 350px;
-    left: 77%;
-    top: 30px;
     font-family: Roboto;
     font-weight: 500;
     font-size: 17px;
     line-height: 30px;
+    margin-top: 30px;
 }
 
 .review_buttons .like_number {
@@ -791,6 +784,7 @@ body {
 }
 
 .main_comment .comment_name {
+    display: inline-block;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -799,10 +793,8 @@ body {
     opacity: 0.4;
 }
 
-.main_comment  .comment_date {
-    position: relative;
-    left: 90%;
-    top: -20px;
+.main_comment .comment_date {
+    margin-left: 40px;
 }
 
 .main_comment .comment_text {
@@ -926,7 +918,7 @@ body {
 
 .other_review {
     background-color: #FFFFFF;
-    width: 1500px;
+    width: 100%;
     padding: 34px 53px 45px 70px;
     margin: 0 auto;
     margin-top: 65px;
@@ -936,10 +928,9 @@ body {
 
 /* СТРАНИЦА С ДОБАВЛНИЕМ ОТЗЫВА */
 
-.add_review {
+.add_review_wrapper {
     font-family: Roboto;
     position: relative;
-    /* max-width: 1500px;  */
     margin: 0 auto;
 }
 
@@ -1032,7 +1023,6 @@ body {
     background-color: #EEEEEE;
     cursor: pointer;
     padding: 15px 26px 15px 56px; 
-    width: 280  px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 5px;
@@ -1123,4 +1113,5 @@ body {
 .add_review_button {
     display: inline-block;
     margin-left: 115px;
+    vertical-align: top;
 }

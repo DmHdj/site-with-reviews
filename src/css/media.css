@@ -10,6 +10,30 @@
     .aside .categories .review_theme li {
         padding: 1px 20px;
     }
+
+    .select_object {
+        width: 80%;
+        height: 60px;
+    }
+
+    .first_step button {
+        height: 60px;
+        width: 15%;
+    }
+
+    .main_review_text::after {
+        width: 105%;
+    }
+
+    .comments {
+        margin-top: 53px;
+        padding: 30px 35px 20px 50px;
+    }
+
+    .tags_list {
+        margin-top: 40px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -29,10 +53,10 @@
    
     .buttons {
         width: 150px;
+        padding: 0;
     }
 
     .header_wrapper .header_button .header_register-entry {
-        padding: 0;
         margin-top: 10px;
     }
 
@@ -48,12 +72,13 @@
     .main_wrapper {
         min-height: 0;
     }
+
     .main_wrapper .main_title {
         margin: 0;
     }
 
     .main_wrapper .main_title .main_header {
-        font-size: 32;
+        font-size: 32px;
         line-height: 36px;
         margin-left: 50px;
         margin-top: 40px;
@@ -70,9 +95,11 @@
     .top-reviews {
         width: 70%;
     }
+
     .top-reviews .top-reviews_wrapper {
         margin-top: 50px;
     }
+
     .top-reviews .top-reviews_wrapper .top-reviews_item {
         width: 550px;
         max-width: none;
@@ -83,6 +110,53 @@
 
     .aside {
         width: 30%;
+    }
+
+    .second_step .add_review_text {
+        margin-top: 10px;
+    }
+
+    .advantages label, .disadvantages label {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .advantages label span, .disadvantages label span {
+        margin: 0;
+    }
+
+    .main_review {
+        margin-top: 50px;
+    }
+
+    .review_rating {
+        left: 88%;
+    }
+
+    .review_buttons {
+        font-size: 14px;
+    }
+
+    .review_buttons .complain {
+        width: 150px;
+    }
+
+    .review_buttons .complain::before {
+        left: 14px;
+    }
+
+    .review_buttons .dislike_number {
+        margin-right: 15px;
+        width: 0;
+    }
+
+    .review_buttons .like_number {
+        margin-right: 30px;
+    }
+
+    .reply_date {
+        padding-left: 18px;
     }
 
 }
@@ -156,6 +230,38 @@
         width: 650px;
     }
 
+    .step {
+        padding: 32px 42px 32px 42px;
+    }
+
+    .first_step::before {
+        left: 60px;
+    }
+
+    .second_step::before {
+        left: 60px;
+    }
+
+    .comments_wrapper {
+        margin-top: 26px;
+    }
+
+    .comments_title {
+        font-size: 20px;
+    }
+
+    .comments_replies {
+        padding: 14px 30px 30px 30px;
+    }
+
+    .reply_to_reply {
+        padding: 13px 20px 25px 20px;
+    }
+
+    .comment_add {
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -221,6 +327,7 @@
 
     .menu_active {
         left:0;
+        padding-left: 15px;
     }
 
     .header_wrapper .menu_list .menu_item {
@@ -272,7 +379,152 @@
     .modal__dialog {
         width: 520px;
     }
+
+    .step_title {
+        font-size: 24px;
+        margin-left: 90px;
+    }
+
+    .step_desrc {
+        font-size: 13px;
+        margin: 10px 0 15px 90px;
+    }
+
+    .first_step::before {
+        width: 55px;
+        height: 70px;
+        top: 45px
+    }
+
+    .second_step::before {
+        width: 55px;
+        height: 55px;
+    }
+
+    .select_object {
+        padding: 10px 15px;
+        height: 40px;
+        width: 70%;
+    }
+
+    .first_step button  {
+        width: 25%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .second_step .add_review_text {
+        padding: 15px;
+        height: 150px;
+    }
     
+    .input_file_btn {
+        padding: 13px 18px 13px 42px;
+    }
+
+    .pros_and_cons {
+        flex-direction: column;
+    }
+
+    .pros_and_cons .advantages, .pros_and_cons .disadvantages {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .advantages textarea, .disadvantages textarea {
+        margin-bottom: 15px;
+        padding: 15px;
+        height: 150px;
+    }
+
+    .pros_and_cons .disadvantages {
+        margin-bottom: 0;
+    }
+
+    .add_review_form .rating {
+        margin: 15px 0 0 0px;
+    }
+
+    .add_review_rating {
+        font-size: 28px;
+    }
+
+    .add_review_form .rating span {
+        font-size: 15px;
+    }
+
+    .add_review_button {
+        margin-left: 70px;
+    }
+
+    .review_wrapper h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .tags_list {
+        margin-top: 20px;
+    }
+
+    .tags li {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .review_wrapper {
+        padding-left: 0;
+    }
+
+    .main_review  {
+        padding: 20px;
+    }
+
+    .review_foto {
+        top: 30px;
+        left: 0;
+    }
+
+    .review_rating { 
+        left: 75%;
+        top: -25px;
+    }
+
+    .review_about {
+        margin-left: 90px;
+        margin-top: 22px;
+    }
+
+    .main_review .review_about {
+        margin-top: 0;
+    }
+
+    .main_review_text::after {
+        width: 105%;
+    }
+
+    .comments {
+        padding: 15px 17px 10px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comments_replies {
+       padding: 14px 15px 15px 15px;
+    }
+
+    .comment_add {
+        display: inline-block;
+        width: 200px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .other_review {
+        padding: 20px;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -283,12 +535,11 @@
     .header_register-entry, .header_add-revie  {
         position: relative;
         visibility: hidden;
+        right: 100%;
     }
 
     .header_register-entry::before, .header_add-revie::before {
         content: "";
-        width: 40px;
-        height: 40px;
         display: block;
         position: absolute;
         visibility:visible;
@@ -297,16 +548,20 @@
     .header_register-entry::before {
         background: url('../icons/account_check.svg') center center/cover no-repeat;
         top: -5px;
-        left: -10px;
+        left: 300px;
+        width: 40px;
+        height: 40px;
     }
 
     .header_add-revie::before {
         background: url('../icons/add_review.svg') center center/cover no-repeat;
-        left: 50px;
+        left: 350px;
+        width: 34px;
+        height: 34px;
     }
 
     .hamburger {
-        top: 35px;
+        top: 40px;
     }
 
     .main_wrapper {
@@ -382,6 +637,52 @@
         height: 30px;
         line-height: 0;
     }
+
+    .add_review_wrapper h1 {
+        font-size: 24px;
+        margin: 10px 0 20px 0;
+    }
+
+    .add_review_form {
+        margin-top: 0;
+    }
+
+    .first_step::before, .second_step::before {
+        display: none;
+    }
+
+    .step {
+        padding: 20px;
+    }
+    .step_title, .step_desrc {
+        margin: 10px 0 15px 0;
+    }
+
+    .step_title {
+        font-size: 20px;
+    }
+
+    .step_desrc {
+        font-size: 12px;
+    }
+
+    .input_wrapper span {
+        display: none;
+    }
+
+    .advantages label, .disadvantages label {
+        font-size: 13px;
+    }
+
+    .advantages label input, .disadvantages label input {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+    }
+
+    .add_review_button {
+        text-align: center;
+    }
 }
 
 @media (max-width: 475px) {
@@ -389,7 +690,7 @@
         max-width: 300px;
     }
     .hamburger {
-        top: 35px;
+        top: 40px;
         right: 20px;
     }
 
@@ -465,6 +766,85 @@
         width: 200px;
     }
 
-    
+    .header_register-entry::before{
+        left: 100px;
+    }
+
+    .header_add-revie::before {
+        left: 190px;
+    }
+
+    .add_review_button {
+        margin-top: 15px;
+    }
+
+    .review_wrapper h1 {
+        text-align: center;
+    }
+
+    .tags_list .tag_item {
+        margin-right: 9px;
+    }
+
+    .tag_item a {
+        font-size: 10px;
+    }
+
+    .review_rating {
+        left: 65%;
+    }
+
+    .review_foto {
+        top: 52px;
+        left: 10px;
+    }
+
+    .main_review_text::after {
+        width: 120%;
+    }
+
+    .review_buttons .complain {
+        visibility: hidden;
+    }
+
+    .review_buttons .complain::before {
+        visibility: visible;
+        left: 120px;
+    }
+
+    .review_buttons .dislike_number {
+        margin-right: -92px;
+    }
+
+    .comment_text {
+        line-height: 20px;
+    }
+
+    .main_comment .comment_name {
+        display: block;
+    }
+
+    .main_comment .comment_date {
+        margin: 0;
+    }
+
+    .reply_date {
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    .reply_text {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .comment_add {
+        width: 150px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+
 }
+
 
